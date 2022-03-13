@@ -11,6 +11,6 @@ app.use(router);
 
 app.use((_req, res) => res.status(404));
 
-app.listen(environment.port || 3334, () => {
+app.listen(process.env.PORT || 3334, () => {
   console.log("Server running...");
 });
